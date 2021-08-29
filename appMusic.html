@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app_music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./resourse/css/swiper.css">
+    <link rel="stylesheet" href="./resourse/css/appMusic.css">
+    <link rel="stylesheet" href="./resourse/css/reponsive.css">
+ 
+
+     
+
+</head>
+<body>
+    <div class="app">
+        <div class="app__container">
+            <div class="sidebar">
+                <div class="logo__content">
+                    <div class="logo">
+                        <i class='bx bxl-soundcloud' ></i>
+                        <div class="logo_name">SoundClear</div>
+                    </div>
+                    <i class='bx bx-menu' id="toggle"></i>
+                </div>
+                <ul class="nav_list">
+                    <li> 
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Search...">
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-user-check'></i>
+                            <span class="links_name">Cá nhân</span>
+                        </a>
+                            <span class="tooltip">Cá nhân</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-album'></i>
+                            <span class="links_name">Khám phá</span>
+                        </a>
+                            <span class="tooltip">Khám phá</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-broadcast'></i>
+                            <span class="links_name">Radio</span>
+                        </a>
+                            <span class="tooltip">Dasboard</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-book-heart'></i>
+                            <span class="links_name">Liked</span>
+                        </a>
+                            <span class="tooltip">Liked</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-playlist' ></i>
+                            <span class="links_name">Playlist</span>
+                        </a>
+                            <span class="tooltip">Playlist</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-time-five'></i>
+                            <span class="links_name">Rencently Player</span>
+                        </a>
+                            <span class="tooltip">Rencently Player</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-cog' ></i>
+                            <span class="links_name">Cài đặt</span>
+                        </a>
+                            <span class="tooltip">Cài đặt</span>
+                    </li>
+                </ul>
+                <div class="profile_content">
+                    <div class="profile">
+                        <div class="profile_details">
+                            <img src="./resourse/image/poster_karik.jpg" alt="">
+                            <div class="name_job">
+                                <div class="name">Đatk</div>
+                                <div class="job">producer</div>
+                            </div>
+                        </div>
+                        <i class='bx bx-log-out' id="log_out"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- -PHẦN DASBOARD======================================================================== -->
+            <!-- ======================================================================================== -->
+            <div class="app__content">
+                <div class="app__content-header">
+                    <div class="group__pgn-and-search">
+                        <div class="pagination">
+                            <i class='bx bx-menu' id="toggleRs"></i>
+                        </div>
+                        <div class="search-music">
+                            <input type="text">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="content__header-logo">
+                        <i class='bx bxl-soundcloud' ></i>
+                        <div class="logo_name">SoundClear</div>
+
+                    </div>
+                </div>
+                <div class="app__album-list">
+                    <div class="app__title">
+                        <span>playList</span>
+                        <h3>Album</h3>
+                    </div>
+                    <div class="slide__albums">
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card__album">
+                                        <div class="card__album-img">
+                                            <img class="album-img" src="./resourse/image/poster_pop.jpg" alt="">
+                                        </div>
+                                        <div class="card__album-name">
+                                            <span class="album-name">Nhạc trẻ gây nghiện</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card__album">
+                                        <div class="card__album-img">
+                                            <img class="album-img" src="./resourse/image/poster3.jpg" alt="">
+                                        </div>
+                                        <div class="card__album-name">
+                                            <span class="album-name">Nhạc trẻ gây nghiện</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card__album">
+                                        <div class="card__album-img">
+                                            <img class="album-img" src="./resourse/image/poster_pop2.jpg" alt="">
+                                        </div>
+                                        <div class="card__album-name">
+                                            <span class="album-name">Nhạc trẻ gây nghiện</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card__album">
+                                        <div class="card__album-img">
+                                            <img class="album-img" src="./resourse/image/poster4.jpg" alt="">
+                                        </div>
+                                        <div class="card__album-name">
+                                            <span class="album-name">Nhạc trẻ gây nghiện</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card__album">
+                                        <div class="card__album-img">
+                                            <img class="album-img" src="./resourse/image/poster_rap.png" alt="">
+                                        </div>
+                                        <div class="card__album-name">
+                                            <span class="album-name">Nhạc trẻ gây nghiện</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card__album">
+                                        <div class="card__album-img">
+                                            <img class="album-img" src="./resourse/image/poster_karik.jpg" alt="">
+                                        </div>
+                                        <div class="card__album-name">
+                                            <span class="album-name">Nhạc trẻ gây nghiện</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div> 
+                        </div>                  
+                   </div>
+               </div>
+               <!--  APP MUSIC PLAYER -->
+               <section class="app__music-play"> 
+                    <div class="app__section-playlist">
+                        <div class="app__title">
+                            <span>playList</span>
+                            <h3>Recently added</h3>
+                        </div>
+                        <div class="playlist">
+                            <!-- phần các thể bào hát  -->
+                            <div class="song active"> 
+                            <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                            </div>
+                            <div class="body">
+                                <h3 class="title">Music name</h3>
+                                <p class="author">Singer</p>
+                                <p class="author">Singer</p>
+                                <p class="author">14 ngày trước</p>
+                                <p class="author">duration</p>
+                            </div>
+                            </div>      
+                        </div>
+                    </div>  
+                    <!-- Phần hiển thị video -->
+                    <div class="app__section-video">
+                        <div class="app__title">
+                            <span>playList</span>
+                            <h3>Recently added</h3>
+                        </div>
+                        <div class="swiper-container SwiperVideo">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide " style="height: 200px;">
+                                <video id="my-video" class="video-js app__video" controls preload="auto"
+                                    poster="./resourse/image/soobin_poster.jpg" data-setup="{}">
+                                    <source src="Anh Đã Quen Với Cô Đơn - Soobin Hoàng Sơn - Official Music Video 4K.mp4" type="video/mp4" />
+                                </video>
+                              </div>
+                              <div class="swiper-slide">Slide 2</div>
+                              <div class="swiper-slide">Slide 3</div>
+                            </div>
+                        </div>
+                    </div> 
+               </section>
+               
+           
+               
+               
+               <!-- PHẦN DIỀU KHIỀN TÌNH CHƠI NHẠC -->
+               <section class="app__control">
+                <div class="songDisplay">
+                    <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                    </div>
+                    <div class="song-thumb">
+                        <h3>name song</h3>
+                        <span>name singer</span>
+                    </div>
+                  </div>
+                    <!-- Control -->
+                    <div class="control">
+                      <div class="btnM btn-repeat">
+                        <i class="fas fa-redo"></i>
+                      </div>
+                      <div class="btnM btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                      </div>
+                      <div class="btnM btn-toggle-play">
+                        <!-- <i class="fas fa-pause icon-pause"></i> -->
+                        <i class="fas fa-play icon-play"></i>
+                      </div>
+                      <div class="btnM btn-next">
+                        <i class="fas fa-step-forward"></i>
+                      </div>
+                      <div class="btnM btn-random">
+                        <i class="fas fa-random"></i>
+                      </div>
+                      <input id="progress" class="progress" type="range" value="0" step="0.2" min="0" max="100">
+                    </div>
+                    <audio id="audio" src="./alanwalker.mp3"></audio>
+               </section>
+            </div>   
+             
+    </div>
+    <script src="./resourse/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./resourse/js/swiper.js"></script>
+    <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+    <script src="./resourse/js/dasboard.js"></script>    
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+.app__content-header.album{
+  position: fixed;
+  
+  z-index: 1;
+}
+.section__album-content{
+   position: relative;
+   width: 100%;
+   min-height:500px ;
+   padding: 0px 20px 0 20px;
+   display: flex;
+   flex-wrap: wrap;
+   overflow: hidden;
+
+   /* background-color: red; */
+}
+.section__album-infomation{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+
+}
+.album-profide{
+  position: relative;
+  width: 100%;
+  
+}
+.profide__background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  display: none;
+}
+.album-profide__poster{
+    position: relative;  
+    width: 320px;
+    height:320px;
+    margin: auto;
+    border-radius: 12px;
+    background: #Fff;
+    overflow: hidden;
+}
+.album-profide__poster img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    transition: all 0.7s ease;
+}
+.album-profide__poster .bx-play-circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5rem;
+    color:#fff;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 1;
+}
+.album-profide__poster:hover .bx-play-circle{
+    display: block;
+}
+.album-profide__poster:hover img{
+   filter: brightness(0.5);
+   transform: scale(1.1);
+}
+.album-profide__details{
+    margin:16px 0 26px 0;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+.album-profide__title{
+    color: #11101d;
+   font-size: 2rem;
+   margin: 5px 0;
+}
+
+.album-profide__update-time{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: #999;
+    margin:5px;
+
+}
+.album-profide__amount-liked{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    color: #999;
+    margin:5px;
+
+}
+.album__btn-normal{
+   display: block;
+}
+.album__btn-normal .album-like,
+.album__btn-normal .album-option{
+    position: relative;
+    font-size: 2rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin:20px 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    z-index: 2;
+}
+/* .album__btn-normal .album-like::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height:10px;
+    background-color: red;
+} */
+.album__btn-normal .album-like:hover{
+    
+}
+.section__album-btn{
+    width: 180px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius:20px;
+    background:#11101d ;
+    /* display: none; */
+}
+.section__album-btn .bx-play{
+    font-size: 3rem;
+    color: #fff;
+}
+.section__album-btn span{
+    font-size: 1.4rem;
+    color: #fff;
+}
+/*  thẻ button khi reponsive */
+.album__btn-reponsive{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    display: none;
+}
+.album__btn-reponsive .album-like,
+.album__btn-reponsive .album-share
+{
+ font-size: 2rem  
+}
+
+
+/* ================================================================================================ */
+.section__album-playlist{
+    width: 60%;
+    height: 100%;
+    padding-top: 60px;
+    overflow: auto;
+
+}
+
+.playlist__album{
+  flex: 1;
+  padding:0;
+  height: 580px;
+  overflow-y: auto;
+}
+/* =========================================== */
+.app__album-list{
+margin-bottom: 60px;
+
+}
+
+  

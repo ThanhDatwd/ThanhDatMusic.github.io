@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app_music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="./resourse/css/swiper.css">
+    <link rel="stylesheet" href="./resourse/css/appMusic.css">
+    <link rel="stylesheet" href="./resourse/css/app.MusicAlbum.css">
+    <link rel="stylesheet" href="./resourse/css/reponsive.css">
+
+
+</head>
+<body>
+    <div class="app">
+        <div class="app__container">
+            <div class="sidebar">
+                <div class="logo__content">
+                    <div class="logo">
+                        <i class='bx bxl-soundcloud' ></i>
+                        <div class="logo_name">SoundClear</div>
+                    </div>
+                    <i class='bx bx-menu' id="toggle"></i>
+                </div>
+                <ul class="nav_list">
+                    <li> 
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Search...">
+                    </li>
+                    <li>
+                        <a href="./appMusic.html">
+                            <i class='bx bxs-user-check'></i>
+                            <span class="links_name">Cá nhân</span>
+                        </a>
+                            <span class="tooltip">Cá nhân</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-album'></i>
+                            <span class="links_name">Khám phá</span>
+                        </a>
+                            <span class="tooltip">Khám phá</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-grid-alt' ></i>
+                            <span class="links_name">Dasboard</span>
+                        </a>
+                            <span class="tooltip">Dasboard</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-book-heart'></i>
+                            <span class="links_name">Liked</span>
+                        </a>
+                            <span class="tooltip">Liked</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-playlist' ></i>
+                            <span class="links_name">Playlist</span>
+                        </a>
+                            <span class="tooltip">Playlist</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-time-five'></i>
+                            <span class="links_name">Rencently Player</span>
+                        </a>
+                            <span class="tooltip">Rencently Player</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-cog' ></i>
+                            <span class="links_name">Cài đặt</span>
+                        </a>
+                            <span class="tooltip">Cài đặt</span>
+                    </li>
+                </ul>
+                <div class="profile_content">
+                    <div class="profile">
+                        <div class="profile_details">
+                            <img src="./resourse/image/poster_karik.jpg" alt="">
+                            <div class="name_job">
+                                <div class="name">Đatk</div>
+                                <div class="job">producer</div>
+                            </div>
+                        </div>
+                        <i class='bx bx-log-out' id="log_out"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- -PHẦN DASBOARD======================================================================== -->
+            <!-- ======================================================================================== -->
+            <div class="app__content">
+                <div class="app__content-header">
+                    <div class="group__pgn-and-search">
+                        <div class="pagination">
+                            <i class='bx bx-menu' id="toggleRs"></i>
+                        </div>
+                        <div class="search-music">
+                            <input type="text">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="content__header-logo">
+                        <i class='bx bxl-soundcloud' ></i>
+                        <div class="logo_name">SoundClear</div>
+
+                    </div>
+                </div>
+              <!-- section__album-content -->
+                <section class="section__album-content">
+                    <div class="section__album-infomation">
+                        <div class="album-profide" >
+                            <img class="profide__background" src="./resourse/image/poster_karik.jpg" alt="">
+                            <div class="album-profide__poster">
+                                <img src="./resourse/image/poster_rap.png" alt="">
+                                <i class='bx bx-play-circle'></i>
+                             </div>
+                             <div class="album-profide__details">
+                                <h3 class="album-profide__title">
+                                    Pop ballad nổi bật
+                                </h3>
+                                <p class="album-profide__update-time">Cập nhật 26/08/2021</p>
+                                <p class="album-profide__amount-liked">176K Người yêu thích</p>
+                             </div>
+                        </div>
+                        <div class="album__btn-normal">
+                            <button class="section__album-btn">
+                                <i class='bx bx-play'></i>
+                                <span>Phát Ngẫu nhiên</span>
+                             </button>
+                            <i class='bx bx-heart album-like'></i>
+                            <i class="fas fa-ellipsis-h album-option"></i>
+                        </div>                  
+                         <!-- btn khi reponsive -->
+                        <div class="album__btn-reponsive">
+                            <i class='bx bx-heart album-like'></i>
+                            <button class="section__album-btn">
+                                <i class='bx bx-play'></i>
+                                <span>Nghe tất cả</span>
+                            </button>
+                            <i class='bx bx-share-alt album-share' ></i>
+                        </div>
+                    </div>
+                    <div class="section__album-playlist">
+                        <div class=" playlist playlist__album">
+                        <div class="song active"> 
+                            <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                            </div>
+                            <div class="song__detail">
+                                <div class="body">
+                                    <h3 class="title">Music name</h3>
+                                    <p class="author">Singer</p>
+                                </div>
+                                <p class="duration">04:37</p>
+                                <div class="option">
+                                    <i class='bx bxs-microphone-alt'></i>
+                                    <i class='bx bx-heart' ></i>
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                            </div>
+                        </div>      
+                        </div>
+                    </div>
+                <!-- PHẦN ALBUM SEE MORE -->
+                    <div class="app__album-list">
+                        <div class="app__title">
+                            <span>playList</span>
+                            <h3>Bạn có thể quan tâm</h3>
+                        </div>
+                        <div class="slide__albums">
+                            <div class="swiper-container mySwiper">
+                                <div class="swiper-wrapper abums-list">
+                                    <div class="swiper-slide" data-index="1" >
+                                        <div class="card__album">
+                                            <div class="card__album-img">
+                                                <img class="album-img" src="./resourse/image/poster_pop.jpg" alt="">
+                                            </div>
+                                            <div class="card__album-name">
+                                                <span class="album-name">Nhạc trẻ gây nghiện</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="swiper-pagination"></div> 
+                            </div>                  
+                       </div>
+                    </div>
+                </section>            
+               <!-- PHẦN DIỀU KHIỀN TÌNH CHƠI NHẠC -->
+               <section class="app__control">
+                <div class="songDisplay">
+                    <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                    </div>
+                    <div class="song-thumb">
+                        <h3>name song</h3>
+                        <span>name singer</span>
+                    </div>
+                  </div>
+                    <!-- Control -->
+                    <div class="control">
+                      <div class="btnM btn-repeat">
+                        <i class="fas fa-redo"></i>
+                      </div>
+                      <div class="btnM btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                      </div>
+                      <div class="btnM btn-toggle-play">
+                        <!-- <i class="fas fa-pause icon-pause"></i> -->
+                        <i class="fas fa-play icon-play"></i>
+                      </div>
+                      <div class="btnM btn-next">
+                        <i class="fas fa-step-forward"></i>
+                      </div>
+                      <div class="btnM btn-random">
+                        <i class="fas fa-random"></i>
+                      </div>
+                      <input id="progress" class="progress" type="range" value="0" step="0.2" min="0" max="100">
+                    </div>
+                    
+                
+                    <audio id="audio" src="./alanwalker.mp3"></audio>
+               </section>
+            </div>   
+             
+    </div>
+    <!-- <script src="./resourse/js/main.js"></script> -->
+    <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+    <script src="./resourse/js/dasboard.js"></script>
+  
+</body>
+  <script>
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+      const section_album= $(".section__album-content")
+      const abumslist =$(".abums-list")
+      const posterAlbum=$(".album-profide__poster img")
+      const profideTitle=$(".album-profide__title")
+      const background =$(".profide__background")
+      const albumplaylist=$(".playlist__album")
+
+
+    const cdThumb = $(".cd-thumb");
+    const songName=$(".song-thumb h3")
+    const singerName=$(".song-thumb span")
+    const audio = $("#audio");
+    const playBtn = $(".btn-toggle-play");
+    const progress = $("#progress");
+    const prevBtn = $(".btn-prev");
+    const nextBtn = $(".btn-next");
+    const randomBtn = $(".btn-random");
+    const repeatBtn = $(".btn-repeat");  
+    const playlist = $(".playlist");
+    const albumlist=$(".app__album-list")
+    var currentIndex=0
+    console.log(songName)
+      const app_album1={
+      
+        poster:[
+           {   abum_id:1,
+               name:'Nhạc trẻ gây nghiện',
+               background:'https://i.pinimg.com/236x/69/91/e6/6991e6aff513af8b6ee7e704decb86f7.jpg',
+               image: "https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg"
+           },
+           {   
+               album_id:2, 
+               name:'Bài hát yêu thích',
+               background:'https://i.pinimg.com/564x/cc/ac/17/ccac179de9ea4cb62c1f0dbdb782220c.jpg',
+               image: "https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg"
+           },
+           {   
+               album_id:3, 
+               name:'Đỉnh cao trending',
+               background:'https://i.pinimg.com/564x/f8/78/4e/f8784efe5f54219b08849647366cf14b.jpg',
+               image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+           },
+           {   
+               album_id:4, 
+               name:'Cùng nhau đẩu xa covid',
+               background:'https://i.pinimg.com/236x/b7/66/5c/b7665c6f30dd8919ded854dc7adc32a0.jpg',
+               image: "http://phunukontum.org.vn/wp-content/uploads/2020/04/kc.jpg"
+           },
+           {   
+               album_id:5, 
+               name:'Rap việt theo năm tháng',
+               background:'https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg',
+               image: "https://i.pinimg.com/236x/29/43/3c/29433c9c0d754ea1d72a5c3c2934f234.jpg"
+           },
+           {   
+               album_id:6, 
+               name:'Rap việt theo năm tháng',
+               background:'https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg',
+               image: "https://i.pinimg.com/236x/29/43/3c/29433c9c0d754ea1d72a5c3c2934f234.jpg"
+           }
+        ],
+        album:[
+            [
+            {
+            name: "Big City boi",
+            singer: "Binz",
+            path: "./alanwalker.mp3",
+            image:
+                "https://i.pinimg.com/236x/98/7a/0a/987a0ab28d1469eba75dad7de73e5d68.jpg"
+            },
+            {
+            name: "Nơi Này Có Anh",
+            singer: "Sơn tùng m-pt",
+            path: "https://drive.google.com/uc?export=download&id=1a-yzLOeLpC7in_Oq2J_iDqCWSH7JashK",
+            image: "https://i.pinimg.com/236x/f3/d0/38/f3d038b43dd0aa6ac48f307a5bb8f707.jpg"
+            },
+            {
+            name: "Sai Cách Yêu",
+            singer: "Đen vâu",
+            path:
+                "https://drive.google.com/uc?export=download&id=1pEFm9TqHfvDPwufYvkZRQFP0hb35rjlA",
+            image: "https://i.pinimg.com/564x/b9/d6/84/b9d6843ed6210015aa2045edb8b27389.jpg"
+            },
+            {
+            name: "Chiều Thu Họa bóng nàng",
+            singer: "ĐatKaa",
+            path: "https://drive.google.com/uc?export=download&id=1VwvIM9cZRqWblk4uRPaMyRHMS90mDQXu",
+            image:
+                "https://i.pinimg.com/564x/42/4d/9a/424d9a4d3f6613e4bf48ac1ae14887d8.jpg"
+            },
+            {
+            name: "Từ em mà ra",
+            singer: "Lil z-poet if Đức Anh",
+            path: "https://drive.google.com/uc?export=download&id=1efqM3WTgNURL1a79Jhe-q7gIpS7K8nr-",
+            image:
+                "https://1.bp.blogspot.com/-kX21dGUuTdM/X85ij1SBeEI/AAAAAAAAKK4/feboCtDKkls19cZw3glZWRdJ6J8alCm-gCNcBGAsYHQ/s16000/Tu%2BAana%2BPhir%2BSe%2BRap%2BSong%2BLyrics%2BBy%2BRaftaar.jpg"
+            }, 
+            {
+            name: "Yêu từ đâu mà ra",
+            singer: "Lil zpoet",
+            path:
+                "https://drive.google.com/uc?export=download&id=1CkF7uUTNzyp74zxX_nJKNM8QdqDX92t_",
+            image:
+                "https://filmisongs.xyz/wp-content/uploads/2020/07/Damn-Song-Raftaar-KrNa.jpg"
+            },
+            {
+            name: "Anh Đã quen với cô đơn",
+            singer: "Soobin Hoàng Sơn",
+            path:
+                "https://drive.google.com/uc?export=download&id=1y5vp4nAc6P5-c4n3Fdnzv5BeCUIXpKks",
+            image:
+                "https://filmisongs.xyz/wp-content/uploads/2020/07/Damn-Song-Raftaar-KrNa.jpg"
+            },
+            {
+            name: "Anh ơi anh ơi em nào có tội",
+            singer: "Thương Võ",
+            path:
+                "https://drive.google.com/uc?export=download&id=1FOQRli7lvIgWi17ERWf0OvtztPaZhtAE",
+            image:
+                "https://filmisongs.xyz/wp-content/uploads/2020/07/Damn-Song-Raftaar-KrNa.jpg"
+            },
+            {
+            name: "Càng Lớn Càng Cô Đơn",
+            singer: "Jaykii",
+            path:
+                "https://drive.google.com/uc?export=download&id=1GyyAWuj5JRNJe8JqZJjPrwapwWxtlEZu",
+            image:
+                "https://filmisongs.xyz/wp-content/uploads/2020/07/Damn-Song-Raftaar-KrNa.jpg"
+            },
+            {
+            name: "Vách Ngọc Ngà",
+            singer: "Anh Rồng",
+            path:
+                "https://drive.google.com/uc?export=download&id=1zr5LbT8Tvo50H02azw63ZRTxZO-vsZz6",
+            image:
+                "https://filmisongs.xyz/wp-content/uploads/2020/07/Damn-Song-Raftaar-KrNa.jpg"
+            },
+            {
+            name: "Tình Yêu Khủng Long",
+            singer: "@Fay Cute Official",
+            path:
+                "https://drive.google.com/uc?export=download&id=1NSMpIfuGMri8XAq2t1eky59non5y8EpX",
+            image:
+                "https://filmisongs.xyz/wp-content/uploads/2020/07/Damn-Song-Raftaar-KrNa.jpg"
+            }
+        ],
+            // mảng bài hát 2
+            [
+            {
+            name: "Tu Phir Se Aana",
+            singer: "Raftaar x Salim Merchant x Karma",
+            path: "./alanwalker.mp3",
+            image:
+                "https://1.bp.blogspot.com/-kX21dGUuTdM/X85ij1SBeEI/AAAAAAAAKK4/feboCtDKkls19cZw3glZWRdJ6J8alCm-gCNcBGAsYHQ/s16000/Tu%2BAana%2BPhir%2BSe%2BRap%2BSong%2BLyrics%2BBy%2BRaftaar.jpg"
+            },
+            {
+            name: "Pow Get Down",
+            singer: "Raftaar x Fortnite",
+            path: "./alanwalker.mp3",
+            image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+            },
+            {
+            name: "Naachne Ka Shaunq",
+            singer: "Raftaar x Brobha V",
+            path:
+                "./alanwalker.mp3",
+            image: "https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg"
+            },
+            {
+            name: "Mantoiyat",
+            singer: "Raftaar x Nawazuddin Siddiqui",
+            path: "./alanwalker.mp3",
+            image:
+                "https://a10.gaanacdn.com/images/song/39/24225939/crop_480x480_1536749130.jpg"
+            },
+            {
+            name: "Aage Chal",
+            singer: "Raftaar",
+            path: "./alanwalker.mp3",
+            image:
+                "https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg"
+            },
+            {
+            name: "Damn",
+            singer: "Raftaar x kr$na",
+            path:
+                "./alanwalker.mp3",
+            image:
+                "https://filmisongs.xyz/wp-content/uploads/2020/07/Damn-Song-Raftaar-KrNa.jpg"
+            },
+            {
+            name: "Feeling You",
+            singer: "Raftaar x Harjas",
+            path: "./alanwalker.mp3",
+            image:
+                "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
+            }
+            ]
+        ],
+        definePropertise:function(){
+            Object.defineProperty(this,'currentposter',{
+                get:function(){
+                    return this.poster[currentIndex]
+                }
+        })
+       },
+        handleRender:function(){
+        // const songTime=(audio.duration/60).toFixed(2)
+        const htmls=this.album[currentIndex].map(function(song,index){
+            return ` <div class="song ${index==currentIndex ? 'active':''}" data-index="${index}">
+                    <div class="thumb" style="background-image: url('${song.image}')">
+                    </div>
+                    <div class="song__detail">
+                        <div class="body">
+                        <h3 class="title">${song.name}</h3>
+                        <p class="author">${song.singer}</p>
+                        </div>
+                        <p class="duration"></p>
+                        <div class="option">
+                            <i class='bx bxs-microphone-alt'></i>
+                            <i class='bx bx-heart' ></i>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>    
+                 </div> `
+        })
+        albumplaylist.innerHTML=htmls.join('')
+    },
+        // render ra album
+        handleRender2:function(){
+        const posters=this.poster.map(function(poster,index){
+            return `  <div class="swiper-slide" data-index=${index} >
+                        <div class="card__album">
+                            <div class="card__album-img">
+                                <img class="album-img" src="${poster.image}"alt="">
+                            </div>
+                            <div class="card__album-name">
+                                <span class="album-name">${poster.name}</span>
+                            </div>
+                        </div>
+                    </div>`
+        })
+        abumslist.innerHTML=posters.join('')
+    },
+        handleEvent:function(){
+            console.log(currentIndex)
+           const _this=this
+           abumslist.onclick=function(e){
+              const albumSongNode=e.target.closest('.swiper-slide')
+                console.log(albumSongNode.dataset.index)
+                currentIndex=Number(albumSongNode.dataset.index)
+               _this.loadposter()
+               _this.handleRender()
+
+           }
+           // xủ lí khi click vào poster
+        },
+        loadposter:function(){
+           posterAlbum.src= this.currentposter.image
+           profideTitle.innerHTML=this.currentposter.name
+           background.src=this.currentposter.background
+
+        },
+        start:function(){
+            this.definePropertise()
+            this.loadposter()
+            this.handleEvent()
+            this.handleRender()
+            this.handleRender2()
+        }
+      }
+        app_album1.start() 
+        /////////////////////////////////////////
+        const playMucsic={
+            songIndex:0,
+            isPlaying: false,
+            isRandom: false,
+            isRepeat: false,
+            definePropertise:function(){
+                Object.defineProperty(this,'currentSong',{
+                get:function(){
+                    return app_album1.album[currentIndex][this.songIndex]
+                }
+            })
+            },
+            //// hàm xứ lí sự kiện trong player
+            handleEvent:function(){
+            playlist.onscroll=function(){
+                console.log(playlist)
+                var albumlist_Height=albumlist.offsetHeight
+                console.log(albumlist_Height)
+            }
+            const _this=this
+            // xử lí animate đĩa quay
+            const posterAnimate=posterAlbum.animate([
+              {transform:'rotate(360deg)'}
+            ],
+            {
+                duration:10000,
+                iterations:Infinity
+            }
+
+            )
+            posterAnimate.pause()
+            const cdThumbAnimate=cdThumb.animate([
+                {transform:'rotate(360deg)'},
+            ],
+            {
+                duration:10000,
+                iterations:Infinity
+            })
+            cdThumbAnimate.pause()
+                
+            
+            // xử lý khi user play bài hát 
+            playBtn.onclick=function(){
+                if(_this.isPlaying){
+                    audio.pause()
+                }
+                else{
+                    audio.play()
+                }
+                audio.onplay=function(){
+                    _this.isPlaying=true
+                    posterAnimate.play()
+                    posterAlbum.style.borderRadius='50%' 
+                    posterAlbum.style.transform='rotate(0deg)'  
+                    cdThumbAnimate.play()
+                }
+                audio.onpause=function(){
+                    _this.isPlaying=false
+                    posterAnimate.pause()
+                    posterAlbum.style.borderRadius='12px'
+                    posterAlbum.style.transform='rotate(360deg)'
+                    cdThumbAnimate.pause()
+                }
+                // 
+                audio.ontimeupdate=function(){
+                progress.value =audio.currentTime/audio.duration*100
+                    
+                }
+            }
+            // xử lý khi người dùng muốn tua thời gian
+            progress.oninput=function(){
+                seekTime=audio.duration/100*progress.value
+                audio.currentTime=seekTime
+            }
+            // xử lý khi next bài hát
+            nextBtn.onclick=function(){
+                if(_this.isRandom){
+                    _this.randomSong()
+                }
+                else{
+                    _this.nextSong()
+                }
+                audio.play()
+                _this.isPlaying=true
+            }
+            //  xử lí  khi prev bài  hát 
+            prevBtn.onclick=function(){
+                _this.prevSong()
+                 audio.play()
+               _this.isPlaying=true
+
+            }
+            randomBtn.onclick=function(){
+            _this.isRandom=!_this.isRandom
+            if(_this.isRandom){
+                randomBtn.classList.add('active')
+            }
+            else{
+                randomBtn.classList.remove('active')
+            }
+            }
+            // xử lí khi  user muốn nghe lại bài hát
+            repeatBtn.onclick=function(){
+                _this.isRepeat=!_this.isRepeat
+                if(_this.isRepeat){
+                repeatBtn.classList.add('active')
+            }
+            else{
+                repeatBtn.classList.remove('active')
+            }
+            }
+            // Xử lí khi kết  thúc bài hát
+            audio.onended=function(){
+                if(_this.isRepeat){
+                    audio.play()
+                }
+                else{
+                    nextBtn.click()
+                }
+            }
+            // xử lý khi user muốn chọn bài hát từ thẻ song
+            playlist.onclick=function(e){
+                $('.song.active').classList.remove("active")          
+               const songNode=e.target.closest('.song:not(.active)')
+                if(songNode||e.target.closest('.option')){
+                    songNode.classList.add('active')
+                    _this.songIndex=Number(songNode.dataset.index)
+                    _this.loadCurrentSong()
+                    audio.play()
+                    _this.isPlaying=true
+                    console.log(songNode.dataset.index)
+                }
+                
+            }
+
+        },
+        loadCurrentSong:function(){
+
+            songName.textContent=this.currentSong.name
+            singerName.textContent=this.currentSong.singer
+            cdThumb.style.backgroundImage=`URL(${this.currentSong.image})`
+            audio.src=this.currentSong.path
+        },
+        nextSong:function(){
+        this.songIndex++
+        if(this.songIndex>=app_album1.album[currentIndex].length){
+            this.songIndex=0
+        }
+        console.log(this.songIndex)
+        this.loadCurrentSong()
+        },
+
+        prevSong:function(){
+            this.songIndex--
+            if(this.songIndex<0){
+                this.songIndex=app_album1.album[currentIndex].length-1
+            }
+            this.loadCurrentSong()
+
+        },
+        randomSong:function(){
+            let newIndex
+            do{
+                newIndex=Math.round(Math.random()*this.songs.length)
+            }while(newIndex==this.currentIndex)
+            this.currentIndex=newIndex
+            this.loadCurrentSong()
+        },
+        start:function(){
+            
+            this.handleEvent()
+            this.definePropertise()
+            this.loadCurrentSong()
+        }
+      }
+      playMucsic.start()
+
+    
+  </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="./resourse/js/swiper.js"></script>
+
+</html>
